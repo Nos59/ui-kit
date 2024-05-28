@@ -1,0 +1,15 @@
+@mixin customScrollBar($trackColor, $thumbColor) {
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $trackColor;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $thumbColor;
+    border: 3px solid $trackColor;
+    @include roundCorners-l();
+  }
+}

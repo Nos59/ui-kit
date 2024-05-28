@@ -1,0 +1,17 @@
+@mixin transition-down {
+  .v-enter-active,
+  .v-leave-active {
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .v-enter-to,
+  .v-leave-from {
+    transform: scaleY(1);
+  }
+
+  .v-enter-from,
+  .v-leave-to {
+    transform: scaleY(0);
+  }
+}
